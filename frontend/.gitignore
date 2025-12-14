@@ -23,7 +23,7 @@ frontend/.env.*
 # Next.js
 frontend/.next/
 frontend/out/
-
+frontend/.next/
 # ===============================
 # Backend (Node / Express / Nest)
 # ===============================
