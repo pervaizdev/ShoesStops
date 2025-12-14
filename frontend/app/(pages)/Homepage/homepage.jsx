@@ -42,8 +42,6 @@ const Home = () => {
 
       <Marquee />
       <h1 className="mt-16 text-3xl font-bold mb-10 px-8">Best Selling</h1>
-
-      {/* Loading / Error / Grid */}
       <div className="px-8" ref={productSectionRef}>
         {loading ? (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
