@@ -2,7 +2,7 @@
 const nextConfig = {
   images: {
     remotePatterns: [
-      // Local backend
+      // ✅ Local backend (development)
       {
         protocol: "http",
         hostname: "localhost",
@@ -10,28 +10,18 @@ const nextConfig = {
         pathname: "/uploads/**",
       },
 
-      // Your old API domains
+      // ✅ Current Heroku backend (uploads)
       {
         protocol: "https",
-        hostname: "api.yourdomain.com",
-        pathname: "/uploads/**",
-      },
-      {
-        protocol: "https",
-        hostname: "wohoo-3495d51dbaaf.herokuapp.com",
-        pathname: "/uploads/**",
-      },
-      {
-        protocol: "https",
-        hostname: "wohoo-api-1e8a38739a3b.herokuapp.com",
+        hostname: "shoesstop-126c33a9fb43.herokuapp.com",
         pathname: "/uploads/**",
       },
 
-      // 🚀 Cloudinary (the new images)
+      // ✅ Cloudinary (all images)
       {
         protocol: "https",
         hostname: "res.cloudinary.com",
-        pathname: "/**", // must allow ALL cloudinary paths
+        pathname: "/**",
       },
     ],
   },
